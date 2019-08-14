@@ -9,24 +9,29 @@ a {
   color: #00B7FF;
 }
 
-  .wrapper {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-gap:1em;
-    grid-auto-rows:minmax(50px, auto);
-    grid-template-areas:
-    "header   header"
-    "content-1   content-2"
-    "content-1   content-2"
-  }
-  .box-1 {
-    grid-area: header;
-  }
-  .box-2 {
-    grid-area: content-1;
-  }
-  .box-3 {
-    grid-area: content-2;
+.wrapper {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:1em;
+  grid-auto-rows:minmax(50px, auto);
+  grid-template-areas:
+  "header   header"
+  "content-1   content-2"
+  "content-1   content-2"
+}
+.wrapper-1 .box-1 {
+  grid-area: header;
+}
+.box-2 {
+  grid-area: content-1;
+}
+.box-3 {
+  grid-area: content-2;
+}
+  .box-4 {
+    grid-column: 1/3;
+    grid-row: 2/4;
+
   }
   .nested {
     display:grid;
